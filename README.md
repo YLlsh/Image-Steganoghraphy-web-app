@@ -1,16 +1,16 @@
 # 🖼️ Image Steganography
 
-Image Steganography is the practice of hiding secret data (text, files, etc.) within an image without visibly altering it. This project provides a simple interface to encode and decode hidden messages inside images using basic steganographic techniques.
+Image Steganography is the practice of hiding secret data (text) within an image without visibly altering it. This project provides a simple interface to encode and decode hidden messages inside images using basic steganographic techniques.
 
 ## 🔐 Features
 
 - Encode text data into an image
 - Decode hidden messages from an image
 - Support for lossless image formats (e.g., PNG)
-- Simple and user-friendly interface (CLI/GUI)
+- Simple and user-friendly interface 
 - Lightweight and efficient implementation
 
-## 🚀 Getting Started
+
 
 ### Prerequisites
 
