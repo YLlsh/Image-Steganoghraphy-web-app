@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block same %}
+<div class="MainBox">
+      <div class="container">
+      
+        <div class="cover">
+                
+
+                  <div >
+                    <!--<img class="backImg" src="images/backImg.jpg" alt="">-->
+                    <div class="text">
+                      <span class="text-1">Concealing Secrets<br></span>
+                      <span class="text-2"> The Power of Steganography</span>
+                    </div>
+                  </div>
+                 </div>
+
+        <div class="forms">
+            <div class="form-content">
+
+              <div class="login-form">
+
+                  <div class="title">Decryption</div>
+                  
+                
+
+                    <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <div class="input-boxes">
+                    
+                        <div class="input-box">
+                          <i class="fas fa-lock"></i>
+                          <input type="password" name="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="input-box">
+                          <label class="form-label">Choose image</label>
+                          <input type="file" name="image">
+                        </div>
+
+                        <div>
+                          <button href="#" type="submit" class="button">decode code</button>
+                        </div>
+                      <!-- dont forget to add user how are log in-->
+                </div>
+              </form>    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="white_box">
+
+        <header>Decoded message</header>
+        <hr>
+        {% if messages %}
+        <ul class="messages">
+            <div class="alert alert-danger" role="alert">
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            </div>
+        </ul>
+        {% endif %}
+        <h4>{{ decoded_text }}</h4>
+
+      </div>
+    </div>
+
+{% endblock %}
