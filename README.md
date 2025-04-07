@@ -17,6 +17,7 @@ Image Steganography is the practice of hiding secret data (text) within an image
 Make sure you have the following installed:
 
 - Python 3.x
+- Framework:-django
 - Pillow (Python Imaging Library)
   (note:- if any library requeid  install first)
 Install dependencies using pip:
